@@ -16,21 +16,24 @@ public class LoginTestcase extends Libraryclass {
 	@BeforeMethod
 	public void openapp()
 	{
-	launchapp("chrome","https://opensource-demo.orangehrmlive.com/");
+		browserSetUp();
+	//launchapp("chrome","https://opensource-demo.orangehrmlive.com/");
 	}
 	@Test
 	public void login()
 	{
 	lp=new Loginpage(driver);
 	lp.login("Admin","admin123");
+	lp.submit();
 	}
 
 	@AfterMethod
 	public void teardown() throws IOException
 	{
 	selenium=new Seleniumutility(driver);
-	selenium.screenshot("C:\\Users\\divyak\\git\\HybridCucumber\\HybridCucumber\\src\\test\\resources\\Screenshorts\\login.png");
-	closeapp();
+	selenium.screenshot("C:\\Users\\divyak\\git\\HybridCucumber\\HybridCucumber\\src\\test\\resources\\Screenshorts\\login2.png");
+	//closeapp();
+	teardown();
 	}
 
 }
