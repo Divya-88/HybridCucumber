@@ -33,7 +33,7 @@ public class LoginTestcase extends Libraryclass {
 	selenium=new Seleniumutility(driver);
 	selenium.screenshot("C:\\Users\\divyak\\git\\HybridCucumber\\HybridCucumber\\src\\test\\resources\\Screenshorts\\login2.png");
 	//closeapp();
-	teardown();
+	tearDown();
 	}
 
 }

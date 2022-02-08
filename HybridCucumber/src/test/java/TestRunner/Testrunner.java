@@ -15,8 +15,8 @@ import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class)
 	@CucumberOptions(
 	features = "C:\\Users\\divyak\\git\\HybridCucumber\\HybridCucumber\\src\\test\\resources\\Features\\Testcase.feature",
-	plugin = {"pretty", "html:reports/cucumberreport","json:reports/cucumberreport/jsonreport",
-	"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+	plugin = {"pretty", //"html:reports/cucumberreport","json:reports/cucumberreport/jsonreport",
+	//"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 	},
 	glue="StepDefinition",
 	strict=true

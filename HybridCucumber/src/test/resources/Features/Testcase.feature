@@ -1,11 +1,12 @@
-Feature: To test the orangehrm application
+Feature: To test the Orange application
 
-Scenario Outline: 
+Scenario Outline:
 Given To launch the application and navigate to url
 When Enter "<username>" and "<password>"
 Then To click the submit button
 And To close the browser and take screenshot
-Examples: 
+Examples:
 |username|password|
 |Admin|admin123|
-|John|john456|
+|Pooja|poo123|
+
